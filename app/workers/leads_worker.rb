@@ -1,4 +1,5 @@
 class LeadsWorker
+  require 'cvs'
   include Sidekiq::Worker
 
   def perform(leads_file)
